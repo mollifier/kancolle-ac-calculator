@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDD18FD21D059EB100FCAF7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD18FD11D059EB100FCAF7C /* AppDelegate.swift */; };
+		DDD18FD41D059EB100FCAF7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD18FD31D059EB100FCAF7C /* ViewController.swift */; };
+		DDD18FD71D059EB100FCAF7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD18FD51D059EB100FCAF7C /* Main.storyboard */; };
+		DDD18FD91D059EB100FCAF7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD18FD81D059EB100FCAF7C /* Assets.xcassets */; };
+		DDD18FDC1D059EB100FCAF7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD18FDA1D059EB100FCAF7C /* LaunchScreen.storyboard */; };
+		DDD18FE71D059EB100FCAF7C /* kancolle_ac_calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD18FE61D059EB100FCAF7C /* kancolle_ac_calculatorTests.swift */; };
+		DDD18FF21D059EB100FCAF7C /* kancolle_ac_calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD18FF11D059EB100FCAF7C /* kancolle_ac_calculatorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDD18FE31D059EB100FCAF7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDD18FC61D059EB100FCAF7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDD18FCD1D059EB100FCAF7C;
+			remoteInfo = "kancolle-ac-calculator";
+		};
+		DDD18FEE1D059EB100FCAF7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDD18FC61D059EB100FCAF7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDD18FCD1D059EB100FCAF7C;
+			remoteInfo = "kancolle-ac-calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDD18FCE1D059EB100FCAF7C /* kancolle-ac-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kancolle-ac-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD18FD11D059EB100FCAF7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDD18FD31D059EB100FCAF7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDD18FD61D059EB100FCAF7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDD18FD81D059EB100FCAF7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDD18FDB1D059EB100FCAF7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDD18FDD1D059EB100FCAF7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD18FE21D059EB100FCAF7C /* kancolle-ac-calculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kancolle-ac-calculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD18FE61D059EB100FCAF7C /* kancolle_ac_calculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kancolle_ac_calculatorTests.swift; sourceTree = "<group>"; };
+		DDD18FE81D059EB100FCAF7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD18FED1D059EB100FCAF7C /* kancolle-ac-calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kancolle-ac-calculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD18FF11D059EB100FCAF7C /* kancolle_ac_calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kancolle_ac_calculatorUITests.swift; sourceTree = "<group>"; };
+		DDD18FF31D059EB100FCAF7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDD18FCB1D059EB100FCAF7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD18FDF1D059EB100FCAF7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD18FEA1D059EB100FCAF7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDD18FC51D059EB100FCAF7C = {
+			isa = PBXGroup;
+			children = (
+				DDD18FD01D059EB100FCAF7C /* kancolle-ac-calculator */,
+				DDD18FE51D059EB100FCAF7C /* kancolle-ac-calculatorTests */,
+				DDD18FF01D059EB100FCAF7C /* kancolle-ac-calculatorUITests */,
+				DDD18FCF1D059EB100FCAF7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDD18FCF1D059EB100FCAF7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDD18FCE1D059EB100FCAF7C /* kancolle-ac-calculator.app */,
+				DDD18FE21D059EB100FCAF7C /* kancolle-ac-calculatorTests.xctest */,
+				DDD18FED1D059EB100FCAF7C /* kancolle-ac-calculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDD18FD01D059EB100FCAF7C /* kancolle-ac-calculator */ = {
+			isa = PBXGroup;
+			children = (
+				DDD18FD11D059EB100FCAF7C /* AppDelegate.swift */,
+				DDD18FD31D059EB100FCAF7C /* ViewController.swift */,
+				DDD18FD51D059EB100FCAF7C /* Main.storyboard */,
+				DDD18FD81D059EB100FCAF7C /* Assets.xcassets */,
+				DDD18FDA1D059EB100FCAF7C /* LaunchScreen.storyboard */,
+				DDD18FDD1D059EB100FCAF7C /* Info.plist */,
+			);
+			path = "kancolle-ac-calculator";
+			sourceTree = "<group>";
+		};
+		DDD18FE51D059EB100FCAF7C /* kancolle-ac-calculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDD18FE61D059EB100FCAF7C /* kancolle_ac_calculatorTests.swift */,
+				DDD18FE81D059EB100FCAF7C /* Info.plist */,
+			);
+			path = "kancolle-ac-calculatorTests";
+			sourceTree = "<group>";
+		};
+		DDD18FF01D059EB100FCAF7C /* kancolle-ac-calculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDD18FF11D059EB100FCAF7C /* kancolle_ac_calculatorUITests.swift */,
+				DDD18FF31D059EB100FCAF7C /* Info.plist */,
+			);
+			path = "kancolle-ac-calculatorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDD18FCD1D059EB100FCAF7C /* kancolle-ac-calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD18FF61D059EB100FCAF7C /* Build configuration list for PBXNativeTarget "kancolle-ac-calculator" */;
+			buildPhases = (
+				DDD18FCA1D059EB100FCAF7C /* Sources */,
+				DDD18FCB1D059EB100FCAF7C /* Frameworks */,
+				DDD18FCC1D059EB100FCAF7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kancolle-ac-calculator";
+			productName = "kancolle-ac-calculator";
+			productReference = DDD18FCE1D059EB100FCAF7C /* kancolle-ac-calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDD18FE11D059EB100FCAF7C /* kancolle-ac-calculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD18FF91D059EB100FCAF7C /* Build configuration list for PBXNativeTarget "kancolle-ac-calculatorTests" */;
+			buildPhases = (
+				DDD18FDE1D059EB100FCAF7C /* Sources */,
+				DDD18FDF1D059EB100FCAF7C /* Frameworks */,
+				DDD18FE01D059EB100FCAF7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDD18FE41D059EB100FCAF7C /* PBXTargetDependency */,
+			);
+			name = "kancolle-ac-calculatorTests";
+			productName = "kancolle-ac-calculatorTests";
+			productReference = DDD18FE21D059EB100FCAF7C /* kancolle-ac-calculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDD18FEC1D059EB100FCAF7C /* kancolle-ac-calculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD18FFC1D059EB100FCAF7C /* Build configuration list for PBXNativeTarget "kancolle-ac-calculatorUITests" */;
+			buildPhases = (
+				DDD18FE91D059EB100FCAF7C /* Sources */,
+				DDD18FEA1D059EB100FCAF7C /* Frameworks */,
+				DDD18FEB1D059EB100FCAF7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDD18FEF1D059EB100FCAF7C /* PBXTargetDependency */,
+			);
+			name = "kancolle-ac-calculatorUITests";
+			productName = "kancolle-ac-calculatorUITests";
+			productReference = DDD18FED1D059EB100FCAF7C /* kancolle-ac-calculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDD18FC61D059EB100FCAF7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					DDD18FCD1D059EB100FCAF7C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Z5L8W6XB75;
+					};
+					DDD18FE11D059EB100FCAF7C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DDD18FCD1D059EB100FCAF7C;
+					};
+					DDD18FEC1D059EB100FCAF7C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DDD18FCD1D059EB100FCAF7C;
+					};
+				};
+			};
+			buildConfigurationList = DDD18FC91D059EB100FCAF7C /* Build configuration list for PBXProject "kancolle-ac-calculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDD18FC51D059EB100FCAF7C;
+			productRefGroup = DDD18FCF1D059EB100FCAF7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDD18FCD1D059EB100FCAF7C /* kancolle-ac-calculator */,
+				DDD18FE11D059EB100FCAF7C /* kancolle-ac-calculatorTests */,
+				DDD18FEC1D059EB100FCAF7C /* kancolle-ac-calculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDD18FCC1D059EB100FCAF7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD18FDC1D059EB100FCAF7C /* LaunchScreen.storyboard in Resources */,
+				DDD18FD91D059EB100FCAF7C /* Assets.xcassets in Resources */,
+				DDD18FD71D059EB100FCAF7C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD18FE01D059EB100FCAF7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD18FEB1D059EB100FCAF7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDD18FCA1D059EB100FCAF7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD18FD41D059EB100FCAF7C /* ViewController.swift in Sources */,
+				DDD18FD21D059EB100FCAF7C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD18FDE1D059EB100FCAF7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD18FE71D059EB100FCAF7C /* kancolle_ac_calculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD18FE91D059EB100FCAF7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD18FF21D059EB100FCAF7C /* kancolle_ac_calculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDD18FE41D059EB100FCAF7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDD18FCD1D059EB100FCAF7C /* kancolle-ac-calculator */;
+			targetProxy = DDD18FE31D059EB100FCAF7C /* PBXContainerItemProxy */;
+		};
+		DDD18FEF1D059EB100FCAF7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDD18FCD1D059EB100FCAF7C /* kancolle-ac-calculator */;
+			targetProxy = DDD18FEE1D059EB100FCAF7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDD18FD51D059EB100FCAF7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDD18FD61D059EB100FCAF7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDD18FDA1D059EB100FCAF7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDD18FDB1D059EB100FCAF7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDD18FF41D059EB100FCAF7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDD18FF51D059EB100FCAF7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDD18FF71D059EB100FCAF7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "kancolle-ac-calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hatenablog.mollifier.kancolle-ac-calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		DDD18FF81D059EB100FCAF7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "kancolle-ac-calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hatenablog.mollifier.kancolle-ac-calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		DDD18FFA1D059EB100FCAF7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "kancolle-ac-calculatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hatenablog.mollifier.kancolle-ac-calculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kancolle-ac-calculator.app/kancolle-ac-calculator";
+			};
+			name = Debug;
+		};
+		DDD18FFB1D059EB100FCAF7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "kancolle-ac-calculatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hatenablog.mollifier.kancolle-ac-calculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kancolle-ac-calculator.app/kancolle-ac-calculator";
+			};
+			name = Release;
+		};
+		DDD18FFD1D059EB100FCAF7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "kancolle-ac-calculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hatenablog.mollifier.kancolle-ac-calculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "kancolle-ac-calculator";
+			};
+			name = Debug;
+		};
+		DDD18FFE1D059EB100FCAF7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "kancolle-ac-calculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hatenablog.mollifier.kancolle-ac-calculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "kancolle-ac-calculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDD18FC91D059EB100FCAF7C /* Build configuration list for PBXProject "kancolle-ac-calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD18FF41D059EB100FCAF7C /* Debug */,
+				DDD18FF51D059EB100FCAF7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDD18FF61D059EB100FCAF7C /* Build configuration list for PBXNativeTarget "kancolle-ac-calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD18FF71D059EB100FCAF7C /* Debug */,
+				DDD18FF81D059EB100FCAF7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDD18FF91D059EB100FCAF7C /* Build configuration list for PBXNativeTarget "kancolle-ac-calculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD18FFA1D059EB100FCAF7C /* Debug */,
+				DDD18FFB1D059EB100FCAF7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDD18FFC1D059EB100FCAF7C /* Build configuration list for PBXNativeTarget "kancolle-ac-calculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD18FFD1D059EB100FCAF7C /* Debug */,
+				DDD18FFE1D059EB100FCAF7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDD18FC61D059EB100FCAF7C /* Project object */;
+}
