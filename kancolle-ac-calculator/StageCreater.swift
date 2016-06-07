@@ -46,15 +46,15 @@ class StageCreater {
         return self._stages
     }
     
-    static func satges(areaNumber: Int) -> [Stage] {
+    static func stages(areaNumber: Int) -> [Stage] {
         return self.stages().filter { (s) in s.areaNumber == areaNumber }
     }
 
-    static func satges(stageType: Stage.StageType) -> [Stage] {
+    static func stages(stageType: Stage.StageType) -> [Stage] {
         return self.stages().filter { (s) in s.stageType == stageType }
     }
     
-    static func satges(areaNumber: Int, stageType: Stage.StageType) -> [Stage] {
+    static func stages(areaNumber: Int, stageType: Stage.StageType) -> [Stage] {
         return self.stages().filter { (s) in s.areaNumber == areaNumber && s.stageType == stageType }
     }
 }

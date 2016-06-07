@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     private var mainTableView: UITableView!
+    // 海域ごとのステージを並べた配列
+    private var tableData: [[Stage]]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         mainTableView.dataSource = self
         mainTableView.delegate = self
         self.view.addSubview(mainTableView)
+        
+        self.tableData = (1...StageCreater.areaCount()).map { StageCreater.stages($0) }
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,32 +35,33 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // TODO : 仮実装
-        return 3
+        return self.tableData.count
+    }
+
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.tableData[section].count
     }
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        // TODO : 仮実装
-        return String(section)
+        return "海域\(self.tableData[section][0].areaNumber)"
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         // TODO : 未実装
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // TODO : 仮実装
-        return 3
-    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-        
-        // TODO : update cell
-        
+        updateTableViewCell(cell, cellForRowAtIndexPath: indexPath)
         return cell
+    }
+    
+    private func updateTableViewCell(cell: UITableViewCell, cellForRowAtIndexPath indexPath: NSIndexPath) {
+        // TODO::
+        let stage = self.tableData[indexPath.section][indexPath.row]
+        let stageTypeText = stage.stageType == Stage.StageType.Normal ? "　　" : "追撃"
+        cell.textLabel?.text = "\(stage.areaNumber)-\(stage.stageNumber) \(stageTypeText): \(stage.cost)"
     }
 }
 
