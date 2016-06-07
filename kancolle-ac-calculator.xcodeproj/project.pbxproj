@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DD44AF031D05C58300B1A253 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44AF021D05C58300B1A253 /* Stage.swift */; };
 		DD44AF051D05CA3B00B1A253 /* StageCreater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44AF041D05CA3B00B1A253 /* StageCreater.swift */; };
+		DDA47B621D071C3C00E995A8 /* StageSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA47B611D071C3C00E995A8 /* StageSelectorCell.swift */; };
 		DDD18FD21D059EB100FCAF7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD18FD11D059EB100FCAF7C /* AppDelegate.swift */; };
 		DDD18FD41D059EB100FCAF7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD18FD31D059EB100FCAF7C /* ViewController.swift */; };
 		DDD18FD71D059EB100FCAF7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD18FD51D059EB100FCAF7C /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		DD44AF021D05C58300B1A253 /* Stage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
 		DD44AF041D05CA3B00B1A253 /* StageCreater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageCreater.swift; sourceTree = "<group>"; };
+		DDA47B611D071C3C00E995A8 /* StageSelectorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageSelectorCell.swift; sourceTree = "<group>"; };
 		DDD18FCE1D059EB100FCAF7C /* kancolle-ac-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kancolle-ac-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD18FD11D059EB100FCAF7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDD18FD31D059EB100FCAF7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		DDD18FD01D059EB100FCAF7C /* kancolle-ac-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				DDA47B611D071C3C00E995A8 /* StageSelectorCell.swift */,
 				DDD18FD11D059EB100FCAF7C /* AppDelegate.swift */,
 				DDD18FD31D059EB100FCAF7C /* ViewController.swift */,
 				DDD18FD51D059EB100FCAF7C /* Main.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA47B621D071C3C00E995A8 /* StageSelectorCell.swift in Sources */,
 				DD44AF031D05C58300B1A253 /* Stage.swift in Sources */,
 				DDD18FD41D059EB100FCAF7C /* ViewController.swift in Sources */,
 				DDD18FD21D059EB100FCAF7C /* AppDelegate.swift in Sources */,
