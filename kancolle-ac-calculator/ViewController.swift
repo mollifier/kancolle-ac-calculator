@@ -29,6 +29,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         mainTableView.delegate = self
         self.view.addSubview(mainTableView)
         
+        let clearButton = UIBarButtonItem(barButtonSystemItem: .Cancel, target: self, action: #selector(ViewController.clearButtonDidTap(_:)))
+        self.navigationItem.rightBarButtonItem = clearButton
+        
         self.tableData = (1...StageCreater.areaCount()).map { StageCreater.stages($0) }
         // 初期状態ではすべてのステージを「未選択」とします
         self.selectedData = self.tableData.map { (stages) in stages.map { _ in false } }
@@ -76,6 +79,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func switchValue(sender: StageSelectorCell, didChage on: Bool) {
         if let indexPath = self.mainTableView.indexPathForCell(sender) {
             self.selectedData[indexPath.section][indexPath.row] = on
+        }
+        self.showTotalCost()
+    }
+    
+    func clearButtonDidTap(sender: UIBarButtonItem) {
+        self.selectedData = self.tableData.map { (stages) in stages.map { _ in false } }
+        for cell in self.mainTableView.visibleCells {
+            if let c = cell as? StageSelectorCell, let indexPath = self.mainTableView.indexPathForCell(cell) {
+                self.updateTableViewCell(c, cellForRowAtIndexPath: indexPath)
+            }
         }
         self.showTotalCost()
     }
