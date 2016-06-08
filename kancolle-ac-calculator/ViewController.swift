@@ -8,11 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, StageSelectorCellDelegate {
 
+    private let CellReuseIdentifier = "StageSelectorSell"
     private var mainTableView: UITableView!
     // 海域ごとのステージを並べた配列
     private var tableData: [[Stage]]!
+    // 海域ごとの選択状態を並べた配列
+    private var selectedData: [[Bool]]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,14 +23,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
         mainTableView = UITableView(frame: self.view.bounds)
-        mainTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        mainTableView.allowsSelection = false
+        mainTableView.registerClass(StageSelectorCell.self, forCellReuseIdentifier: CellReuseIdentifier)
         mainTableView.dataSource = self
         mainTableView.delegate = self
         self.view.addSubview(mainTableView)
         
         self.tableData = (1...StageCreater.areaCount()).map { StageCreater.stages($0) }
+        // 初期状態ではすべてのステージを「未選択」とします
+        self.selectedData = self.tableData.map { (stages) in stages.map { _ in false } }
     }
 
+    override func viewWillAppear(animated: Bool) {
+        for cell in self.mainTableView.visibleCells {
+            if let c = cell as? StageSelectorCell, let indexPath = self.mainTableView.indexPathForCell(cell) {
+                self.updateTableViewCell(c, cellForRowAtIndexPath: indexPath)
+            }
+        }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.mainTableView.flashScrollIndicators()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -46,22 +64,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return "海域\(self.tableData[section][0].areaNumber)"
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        // TODO : 未実装
-    }
-    
-    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier(CellReuseIdentifier, forIndexPath: indexPath) as! StageSelectorCell
+        cell.delegate = self
         updateTableViewCell(cell, cellForRowAtIndexPath: indexPath)
         return cell
     }
     
-    private func updateTableViewCell(cell: UITableViewCell, cellForRowAtIndexPath indexPath: NSIndexPath) {
-        // TODO::
+    func switchValue(sender: StageSelectorCell, didChage on: Bool) {
+        if let indexPath = self.mainTableView.indexPathForCell(sender) {
+            self.selectedData[indexPath.section][indexPath.row] = on
+        }
+    }
+    
+    private func updateTableViewCell(cell: StageSelectorCell, cellForRowAtIndexPath indexPath: NSIndexPath) {
         let stage = self.tableData[indexPath.section][indexPath.row]
-        let stageTypeText = stage.stageType == Stage.StageType.Normal ? "　　" : "追撃"
-        cell.textLabel?.text = "\(stage.areaNumber)-\(stage.stageNumber) \(stageTypeText): \(stage.cost)"
+        cell.areaNumber = stage.areaNumber
+        cell.stageNumber = stage.stageNumber
+        cell.stageType = stage.stageType
+        cell.cost = stage.cost
+        cell.on = self.selectedData[indexPath.section][indexPath.row]
     }
 }
 
