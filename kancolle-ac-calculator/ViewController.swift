@@ -32,6 +32,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableData = (1...StageCreater.areaCount()).map { StageCreater.stages($0) }
         // 初期状態ではすべてのステージを「未選択」とします
         self.selectedData = self.tableData.map { (stages) in stages.map { _ in false } }
+        
+        self.showTotalCost()
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -75,6 +77,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if let indexPath = self.mainTableView.indexPathForCell(sender) {
             self.selectedData[indexPath.section][indexPath.row] = on
         }
+        self.showTotalCost()
     }
     
     private func updateTableViewCell(cell: StageSelectorCell, cellForRowAtIndexPath indexPath: NSIndexPath) {
@@ -84,6 +87,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.stageType = stage.stageType
         cell.cost = stage.cost
         cell.on = self.selectedData[indexPath.section][indexPath.row]
+    }
+    
+    private func showTotalCost() {
+        let totalCost = self.selectedData.enumerate().map { (areaIndex, ons) in
+            ons.enumerate().map { (stageIndex, on) in on ? self.tableData[areaIndex][stageIndex].cost : 0 }
+        }.flatten().reduce(0, combine: +)
+        
+        self.navigationItem.title = "合計 \(totalCost) GP"
     }
 }
 
